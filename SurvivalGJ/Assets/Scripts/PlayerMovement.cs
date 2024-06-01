@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.falling;
         }
-        //anim.SetInteger("state", (int)state);
+        anim.SetInteger("state", (int)state);
     }
 
     private bool IsGrounded()

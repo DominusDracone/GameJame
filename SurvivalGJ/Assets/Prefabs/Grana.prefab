@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8500847374059479298}
   - component: {fileID: 619410263214530237}
   - component: {fileID: -7765463561992895171}
+  - component: {fileID: 4824369659817522604}
   m_Layer: 0
   m_Name: Grana
   m_TagString: Grana
@@ -120,3 +121,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.031449907, y: -0.17481029}
   m_Size: {x: 2.0662086, y: 6.102391}
   m_Direction: 0
+--- !u!95 &4824369659817522604
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452170860011929114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 948675f2a77b1f244b1259e66dfd47a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
