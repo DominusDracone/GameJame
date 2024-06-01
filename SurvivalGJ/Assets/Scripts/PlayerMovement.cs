@@ -67,14 +67,19 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Bush");
         if (isHidden)
-        {
+        {            
             isHidden = false;
             GetComponent<SpriteRenderer>().enabled = true;
+            GetComponent<BoxCollider2D>().enabled = true;
+            GetComponent<Rigidbody2D>().gravityScale = 1;            
         }
         else
         {
             isHidden = true;
             GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            nextToBush = true;
         }
     }
 
