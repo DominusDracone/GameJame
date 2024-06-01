@@ -172,8 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4b8202aa69f81458b5216ac0c2e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  igrac: {fileID: 0}
+  igrac: {fileID: 7554534526866069579, guid: 22b67303a5db2324f8c793fb131f160e, type: 3}
   brzina: 0.5
+  stake: {fileID: 7554534526866069579, guid: 22b67303a5db2324f8c793fb131f160e, type: 3}
 --- !u!58 &4008254393355536625
 CircleCollider2D:
   m_ObjectHideFlags: 0

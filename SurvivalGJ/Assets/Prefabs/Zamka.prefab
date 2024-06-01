@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 135614553303801269}
   - component: {fileID: 2848710704089044241}
   - component: {fileID: 3465771058249687557}
+  - component: {fileID: 8458999357382227207}
   m_Layer: 0
   m_Name: Zamka
   m_TagString: Zamka
@@ -165,3 +166,16 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &8458999357382227207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829730190406747768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4160df81b589a594c994431aa1fdb07d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  igrac: {fileID: 0}

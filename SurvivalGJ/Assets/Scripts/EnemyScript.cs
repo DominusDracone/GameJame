@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public GameObject igrac;
     public float brzina;
     public GameObject stake;
 
@@ -16,9 +15,12 @@ public class EnemyScript : MonoBehaviour
     private Vector2 pocetnaPozicija;
     private Smer smer = Smer.desno;
     private Transform igracPozicija;
+    private GameObject igrac;
+
     // Start is called before the first frame update
     void Start()
     {
+        igrac = GameObject.FindGameObjectWithTag("Igrac");
         pogled = transform.GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         pocetnaPozicija = transform.localPosition;
