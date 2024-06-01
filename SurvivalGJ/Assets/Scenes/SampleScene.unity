@@ -1306,12 +1306,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584453397823632854, guid: fdebf2b4983fd9e4181f264e9d6fb06c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7131514574898164691, guid: fdebf2b4983fd9e4181f264e9d6fb06c, type: 3}
       propertyPath: igrac
       value: 
       objectReference: {fileID: 1430135566}
+    - target: {fileID: 7131514574898164691, guid: fdebf2b4983fd9e4181f264e9d6fb06c, type: 3}
+      propertyPath: stake
+      value: 
+      objectReference: {fileID: 7554534526866069579, guid: 22b67303a5db2324f8c793fb131f160e, type: 3}
     - target: {fileID: 7306289705781894713, guid: fdebf2b4983fd9e4181f264e9d6fb06c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.35

@@ -8,6 +8,7 @@ public class EnemyScript : MonoBehaviour
 {
     public GameObject igrac;
     public float brzina;
+    public GameObject stake;
 
     private Collider2D pogled;
     private bool vidiIgraca = false;
@@ -85,5 +86,37 @@ public class EnemyScript : MonoBehaviour
             vidiIgraca = false;
             Debug.Log("Ne vidim ga vise");
         }
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Udarac");
+        if (collision.collider.CompareTag("Zamka"))
+        {
+            UnistiSe(collision.collider);
+        }
+        if (collision.collider.CompareTag("Igrac"))
+        {
+            Ujedi();
+        }
+    }
+
+    private void Ujedi()
+    {
+        Debug.Log("Ujeo sam ga");
+    }
+
+    private void UnistiSe(Collider2D collider)
+    {
+        Debug.Log("Unistio sam se");
+        IspustiResurse();
+        Destroy(collider.gameObject);//unistavanje zamke
+        Destroy(gameObject);//unistavanje sebe
+    }
+
+    private void IspustiResurse()
+    {
+        Instantiate(stake, transform.position, new Quaternion());
     }
 }
