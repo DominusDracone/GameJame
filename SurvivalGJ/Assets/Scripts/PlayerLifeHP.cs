@@ -33,10 +33,9 @@ public class PlayerLifeHP : MonoBehaviour
             TakeDamage((int)damage);
             nextHealthDecreaseTime = Time.time + healthDecreaseInterval;
         }
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             Debug.Log("Umro si.");
-            Application.Quit();
         }
     }
 

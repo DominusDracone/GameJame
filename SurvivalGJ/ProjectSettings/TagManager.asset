@@ -10,6 +10,8 @@ TagManager:
   - Bobica
   - Grana
   - Enemy
+  - Bush
+  - Rain
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Bloom
   - 
   - 
   - 
