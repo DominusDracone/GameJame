@@ -14,7 +14,7 @@ public class EnemyScript : MonoBehaviour
     private bool vidiIgraca = false;
     private Rigidbody2D rb;
     private Vector2 pocetnaPozicija;
-    private Smer smer = Smer.desno;
+    private Smer smer = Smer.levo;
     private Transform igracPozicija;
     private GameObject igrac;
     private bool ujeo;
@@ -61,6 +61,7 @@ public class EnemyScript : MonoBehaviour
                 else
                 {
                     smer = Smer.levo;
+                    GetComponent<SpriteRenderer>().flipX = false;
                 }
                 break;
             case Smer.levo:
@@ -71,6 +72,7 @@ public class EnemyScript : MonoBehaviour
                 else
                 {
                     smer = Smer.desno;
+                    GetComponent<SpriteRenderer>().flipX = true;
                 }
                 break;
         }          
@@ -90,14 +92,19 @@ public class EnemyScript : MonoBehaviour
         //    rb.velocity = new Vector2(igracPozicija.position.x - transform.position.x, 0) * brzina;
         //}
 
-        rb.velocity = new Vector2(igracPozicija.position.x - transform.position.x, 0) * brzina;
+        float razdaljina = igracPozicija.position.x - transform.position.x;
+        if (razdaljina > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        rb.velocity = new Vector2(razdaljina, 0) * brzina;
 
     }
 
-    private IEnumerable Wait()
-    {
-        yield return new WaitForSeconds(2);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -117,6 +124,14 @@ public class EnemyScript : MonoBehaviour
             vidiIgraca = false;
             igrac.GetComponent<PlayerMovement>().isHunted = false;
             Debug.Log("Ne vidim ga vise");
+            if (smer.Equals(Smer.levo))
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
         }
     }
 
