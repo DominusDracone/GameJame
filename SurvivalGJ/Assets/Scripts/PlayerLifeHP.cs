@@ -9,6 +9,8 @@ public class PlayerLifeHP : MonoBehaviour
     public HealthBar healthBar;
     public float healthDecreaseInterval = 1f; // Interval in seconds
     private float nextHealthDecreaseTime = 0f;
+    private bool isInRain = false;
+    public float rainDamageMultiplier = 2f; // Health drops twice as fast 
 
     void Start()
     {
@@ -22,7 +24,12 @@ public class PlayerLifeHP : MonoBehaviour
     {
         if (Time.time >= nextHealthDecreaseTime)
         {
-            TakeDamage(1); // Decrease health by 1 every second
+            float damage = 1;
+            if (isInRain)
+            {
+                damage *= rainDamageMultiplier;
+            }
+            TakeDamage((int)damage);
             nextHealthDecreaseTime = Time.time + healthDecreaseInterval;
         }
     }
@@ -35,5 +42,21 @@ public class PlayerLifeHP : MonoBehaviour
             currentHealth = 0; // Ensure health doesn't go below 0
         }
         healthBar.SetHealth(currentHealth);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rain"))
+        {
+            isInRain = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rain"))
+        {
+            isInRain = false;
+        }
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Stake
   - Bobica
   - Grana
+  - Enemy
   layers:
   - Default
   - TransparentFX

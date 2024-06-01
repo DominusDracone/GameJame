@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameObject zamka;
+    public float pomeraj;
 
     private Rigidbody2D rb;
     private BoxCollider2D coll;
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public int brGrana;
     public int bobiceHP;
     public int stakeHP;
+    public bool nextToBush = false;
+    public bool isHidden = false;
 
     private SpriteRenderer sprite;
     [SerializeField] private LayerMask jumpableGround;
@@ -21,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]  private float jumpForce = 8f;
     private float spiderWebSlowdownFactor = 1f;
     private MovementState state;
+    internal bool isHunted;
+
     private enum MovementState { idle, running, jumping, falling }
     
 
@@ -46,9 +51,27 @@ public class PlayerMovement : MonoBehaviour
         {
             NapraviZamku();
         }
+        if (Input.GetKeyDown(KeyCode.F) && nextToBush && !isHunted)
+        {
+            UdiIzadjiIzBusha();
+        }       
 
         UpdateAnimationState();
         
+    }
+
+    private void UdiIzadjiIzBusha()
+    {
+        if (isHidden)
+        {
+            isHidden = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else
+        {
+            isHidden = true;
+            GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
 
     private void NapraviZamku()
@@ -105,14 +128,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //if (collision.gameObject.CompareTag("Grana"))
-        //{
-        //    Destroy(collision.gameObject);
-        //    PlayerMovement pm = GetComponent<PlayerMovement>();
-        //    pm.brGrana++;
-        //    Debug.Log("Grana: " + pm.brGrana);
-        //}
+    {        
         PlayerLifeHP plHP = GetComponent<PlayerLifeHP>();
 
         switch (collision.gameObject.tag)
@@ -150,4 +166,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    internal void Odgurni(Vector3 vector3)
+    {
+        Vector3 normV3 = vector3.normalized + new Vector3(7, 0, 0);
+
+        transform.position = Vector3.Lerp(transform.position, normV3, pomeraj);
+    }
 }
