@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject zamka;
+
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private Animator anim;
+    private int brGrana;
 
     private SpriteRenderer sprite;
     [SerializeField] private LayerMask jumpableGround;
@@ -14,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField]  private float jumpForce = 8f;
     private float spiderWebSlowdownFactor = 1f;
+    private MovementState state;
     private enum MovementState { idle, running, jumping, falling }
     
 
@@ -35,19 +40,32 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x,jumpForce);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            NapraviZamku();
+        }
 
         UpdateAnimationState();
         
     }
 
+    private void NapraviZamku()
+    {
+        brGrana = 5;
+
+        if (brGrana > 0 && state == MovementState.idle)
+        {
+            brGrana--;
+            Instantiate(zamka, transform.position, new Quaternion());
+        }
+    }
+
     private void UpdateAnimationState()
     {
-        MovementState state;
         if (dirX > 0f)
         {
             state = MovementState.running;
             sprite.flipX = false;
-
         }
         else if (dirX < 0f)
         {
