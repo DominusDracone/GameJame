@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 59f26b40cb322fd4c8fb076c872fe6ed
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_0'
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 395
+        width: 182
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b662d8a62ec144d9c68b818e6832f0
+      internalID: -112730217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_1'
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 401
+        width: 57
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2062e71b906eaf64da96aa81863808fb
+      internalID: -1047692166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_2'
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 397
+        width: 64
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ea75b666d6f5344b467616cce3c3c1
+      internalID: -213971515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_3'
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 394
+        width: 120
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3852e1077f9900e4d890d73651e947b5
+      internalID: -1616690964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_4'
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 166
+        width: 211
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60784031fd12a08428d3c73e0e4f3ab7
+      internalID: 2136755123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_5'
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 396
+        width: 143
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49f521dd8cc6f6478889851597f4aa5
+      internalID: -1128847161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_6'
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 339
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839d32538b46b674bbae5432de6c3b53
+      internalID: 1919979762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_7'
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 334
+        width: 64
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e47f03756f7f349a648f80417d3e16
+      internalID: -1311242913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_8'
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 329
+        width: 108
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e8c0c4156ede24fa178fe003c972ac
+      internalID: -1356139283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_9'
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 327
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb39b35cd8182e3439b4338449cc19fb
+      internalID: 1601835282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_10'
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 228
+        width: 120
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62637c64fa61f6b45be2ae880bf92a20
+      internalID: 648307112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_11'
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 242
+        width: 220
+        height: 67
+      alignment: 9
+      pivot: {x: 0.91478145, y: 0.5112555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77f06c9bb4ee794c8ee9fcbc73fc7d1
+      internalID: -1805320062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_12'
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 158
+        width: 114
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbbe3b4708f3754196158f71678b9f4
+      internalID: 1618324651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_13'
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 177
+        width: 108
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f33e746fba3e5a48900cf70a86592ff
+      internalID: 335476621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_14'
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 64
+        width: 162
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7075a156c7c1d404a8e3eb57372d6a3c
+      internalID: -108898738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_15'
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 143
+        width: 79
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f16fa10687c6a4a8ca79d416299c7f
+      internalID: 975204847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_16'
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 57
+        width: 121
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d542f1ff1182b44b69dfc7f81317aa
+      internalID: -1773855391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_17'
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 64
+        width: 103
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55865004284298b489166a8622164fbc
+      internalID: 2116993985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_18'
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 86
+        width: 123
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27104be30cb6c3e41947e18e9af21fd6
+      internalID: 254463454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_19'
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 66
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec184d47f09090e428b9a74633d2bb7f
+      internalID: -77161912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_0': -112730217
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_1': -1047692166
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_10': 648307112
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_11': -1805320062
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_12': 1618324651
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_13': 335476621
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_14': -108898738
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_15': 975204847
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_16': -1773855391
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_17': 2116993985
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_18': 254463454
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_19': -77161912
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_2': -213971515
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_3': -1616690964
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_4': 2136755123
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_5': -1128847161
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_6': 1919979762
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_7': -1311242913
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_8': -1356139283
+      '[removal.ai]_9b074df8-2ff1-43b7-936a-5217e946857d-game-asset-semi-realistic-video-game-sprite-traps-spike-spiderweb-bush-grass-pine-tree-ha-652883336_9': 1601835282
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

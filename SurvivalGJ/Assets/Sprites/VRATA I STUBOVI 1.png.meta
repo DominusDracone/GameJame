@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 9bbfcdd645c4048478c9bdceeef6102b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2637
+        width: 816
+        height: 1014
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818694ca201fd4740afc3b5c28e35493
+      internalID: -1005207640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_1
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 2841
+        width: 386
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5696332f915bbd84c8e1c9b50a5d7130
+      internalID: -1524277660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_2
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 2257
+        width: 1478
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02df2d7e4142fef478f64816047a78bb
+      internalID: 775303559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_3
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 2837
+        width: 392
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fbf8f8169934747b6c604dd9ef8729
+      internalID: 1084369493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_4
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 475
+        width: 222
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c05c4215f705f4db9acc8dd5c411b5
+      internalID: -1846690014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_5
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1303
+        width: 630
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95060aee48f9f54296820cfb0b734ea
+      internalID: -1135244024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_6
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 2257
+        width: 372
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da33a383019a20447b2af2222a36201b
+      internalID: 699337128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_7
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 2259
+        width: 316
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd2f12bab7c1ec4bac80e40eefcb0dd
+      internalID: 1142075178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_8
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2259
+        width: 718
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72d733b70df0d24cb9f8b0837758f8b
+      internalID: 87462337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_9
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1301
+        width: 364
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fc078c4630f674dab2a2ad17d0c77b
+      internalID: 657709870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_10
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 417
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593213a69f6516444a975a2c390e05ac
+      internalID: 1506678255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_11
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 451
+        width: 854
+        height: 1718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5906c6d12df50d428e82a7c349d8df3
+      internalID: 36624850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_12
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 2897
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e6333a0c0340344ac13a27bc8f11d2
+      internalID: 1747283446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_13
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 2835
+        width: 278
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cfb2492d6281c4c8ff0e97d3353124
+      internalID: 1173049652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_14
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2841
+        width: 380
+        height: 760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951bf78bec1087e4a926990df9589da7
+      internalID: 1796857934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_15
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 2841
+        width: 382
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2f0a3c1da3b7f409fd5bd41a013d19
+      internalID: -1539244969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_16
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 2841
+        width: 378
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559ce8df8bd8425448d7ce6d8d0a1121
+      internalID: -746359995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_17
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2839
+        width: 384
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb02b8877f5857f4ebff1065dd4ca1a8
+      internalID: -1031581286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_18
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2845
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c24adb4ceb2404197abea5674657ac
+      internalID: -700663355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_19
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 473
+        width: 234
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c2c626dec4e034eaca0121ff096a51
+      internalID: -181335444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_20
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 401
+        width: 72
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0140d9bf7b9da4384ddc5aa8ce2a51
+      internalID: 1087097605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_21
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 431
+        width: 1334
+        height: 1766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5283724a768e2439f047b2b04500f3
+      internalID: -204915171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VRATA I STUBOVI 1_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 478
+        width: 854
+        height: 2011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2997207949dff0488df81ceaa445608
+      internalID: 1787807938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VRATA I STUBOVI 1_0: -1005207640
+      VRATA I STUBOVI 1_1: -1524277660
+      VRATA I STUBOVI 1_10: 1506678255
+      VRATA I STUBOVI 1_11: 36624850
+      VRATA I STUBOVI 1_12: 1747283446
+      VRATA I STUBOVI 1_13: 1173049652
+      VRATA I STUBOVI 1_14: 1796857934
+      VRATA I STUBOVI 1_15: -1539244969
+      VRATA I STUBOVI 1_16: -746359995
+      VRATA I STUBOVI 1_17: -1031581286
+      VRATA I STUBOVI 1_18: -700663355
+      VRATA I STUBOVI 1_19: -181335444
+      VRATA I STUBOVI 1_2: 775303559
+      VRATA I STUBOVI 1_20: 1087097605
+      VRATA I STUBOVI 1_21: -204915171
+      VRATA I STUBOVI 1_22: 1787807938
+      VRATA I STUBOVI 1_3: 1084369493
+      VRATA I STUBOVI 1_4: -1846690014
+      VRATA I STUBOVI 1_5: -1135244024
+      VRATA I STUBOVI 1_6: 699337128
+      VRATA I STUBOVI 1_7: 1142075178
+      VRATA I STUBOVI 1_8: 87462337
+      VRATA I STUBOVI 1_9: 657709870
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
