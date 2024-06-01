@@ -10,7 +10,6 @@ public class BushScript : MonoBehaviour
     void Start()
     {
         igrac = GameObject.FindGameObjectWithTag("Igrac");
-        Physics2D.IgnoreCollision(transform.GetComponent<Collider2D>(), igrac.GetComponent<Collider2D>(), true);
     }
 
     // Update is called once per frame
@@ -25,6 +24,7 @@ public class BushScript : MonoBehaviour
         {
             PlayerMovement pm = igrac.GetComponent<PlayerMovement>();
             pm.nextToBush = true;
+            Debug.Log("Next to bush");
         }
     }
 
@@ -34,6 +34,7 @@ public class BushScript : MonoBehaviour
         {
             PlayerMovement pm = igrac.GetComponent<PlayerMovement>();
             pm.nextToBush = false;
+            Debug.Log("Not next to bush");
         }
     }
 }
