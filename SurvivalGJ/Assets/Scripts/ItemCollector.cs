@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int bubbles = 0;
+        
    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bubble")){
+        if (collision.gameObject.CompareTag("Grana")){
             Destroy(collision.gameObject);
-            bubbles++;
-            Debug.Log("Bubbles: " + bubbles);
+            PlayerMovement pm = GetComponent<PlayerMovement>();
+            pm.brGrana++;
+            Debug.Log("Grana: " + pm.brGrana);
         }
            
     }

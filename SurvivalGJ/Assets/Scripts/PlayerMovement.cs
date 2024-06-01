@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private Animator anim;
-    private int brGrana;
+    public int brGrana;
+    public int bobiceHP;
+    public int stakeHP;
 
     private SpriteRenderer sprite;
     [SerializeField] private LayerMask jumpableGround;
@@ -51,11 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void NapraviZamku()
     {
-        brGrana = 5;
-
         if (brGrana > 0 && state == MovementState.idle)
         {
-            brGrana--;
+            brGrana -= 2;
             Instantiate(zamka, transform.position, new Quaternion());
         }
     }
@@ -102,6 +102,52 @@ public class PlayerMovement : MonoBehaviour
     public void ResetSpiderWebSlowdown()
     {
         spiderWebSlowdownFactor = 1f; // Reset to default (no slowdown)
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //if (collision.gameObject.CompareTag("Grana"))
+        //{
+        //    Destroy(collision.gameObject);
+        //    PlayerMovement pm = GetComponent<PlayerMovement>();
+        //    pm.brGrana++;
+        //    Debug.Log("Grana: " + pm.brGrana);
+        //}
+        PlayerLifeHP plHP = GetComponent<PlayerLifeHP>();
+
+        switch (collision.gameObject.tag)
+        {
+            case "Grana":
+                Destroy(collision.gameObject);
+                brGrana++;
+                Debug.Log("Grana: " + brGrana);
+                break;
+            case "Bobica":
+                Debug.Log("Pojeo bobicu");
+                Destroy(collision.gameObject);
+                
+                if (plHP.currentHealth + stakeHP > 100)
+                {
+                    plHP.currentHealth = 100;
+                }
+                else
+                {
+                    plHP.currentHealth += stakeHP;
+                }
+                break;
+            case "Stake":
+                Debug.Log("Pojeo stake");
+                Destroy(collision.gameObject);
+                if (plHP.currentHealth + bobiceHP > 100)
+                {
+                    plHP.currentHealth = 100;
+                }
+                else
+                {
+                    plHP.currentHealth += bobiceHP;
+                }
+                break;
+        }
     }
 
 }

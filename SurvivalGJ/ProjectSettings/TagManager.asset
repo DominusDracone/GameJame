@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Igrac
   - Zamka
+  - Stake
+  - Bobica
+  - Grana
   layers:
   - Default
   - TransparentFX
