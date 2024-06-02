@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLifeHP : MonoBehaviour
 {    
@@ -13,11 +14,16 @@ public class PlayerLifeHP : MonoBehaviour
     private bool isInRain = false;
     public float rainDamageMultiplier = 2f; // Health drops twice as fast 
 
+    private Animator anim;
+    private Rigidbody2D rb;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         nextHealthDecreaseTime = Time.time + healthDecreaseInterval;
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -35,7 +41,7 @@ public class PlayerLifeHP : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
-            GetComponent<PlayerLife>().Die();
+            Die();
             Debug.Log("Umro si.");
         }
     }
@@ -64,5 +70,12 @@ public class PlayerLifeHP : MonoBehaviour
         {
             isInRain = false;
         }
+    }
+
+    public void Die()
+    {
+        rb.bodyType = RigidbodyType2D.Static;
+        anim.SetTrigger("death");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
