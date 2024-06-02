@@ -1,22 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 
 
 
-public class gameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance {  get; private set; }
+
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }        
+    }
 
     public AudioSource bg1;
     public AudioSource bg2;
     public AudioSource bg3;
+    public AudioSource asSFX;
+    public List<AudioClip> SFXs;
+
     private PlayerLifeHP playerLife;
     private AudioSource currentAudio;
     private bool isTransitioning=false;
     // Start is called before the first frame update
     void Start()
-    {playerLife= GameObject.Find("Player").GetComponent<PlayerLifeHP>();
+    {
+        playerLife= GameObject.Find("Player").GetComponent<PlayerLifeHP>();
         if (bg1 == null || bg2 == null || bg3 == null) {
             throw new UnityException("BG muzika ne sme biti null.");
 
@@ -101,5 +120,18 @@ public class gameManager : MonoBehaviour
 
    
         isTransitioning = false;
+    }
+
+    internal void PustiZvuk(string ime)
+    {        
+        foreach (AudioClip ac in SFXs)
+        {
+            if (ac.name == ime)
+            {
+                asSFX.clip = ac;
+                asSFX.Play();
+                break; 
+            }
+        }
     }
 }

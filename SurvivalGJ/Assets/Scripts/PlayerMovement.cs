@@ -105,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+        GameManager.Instance.PustiZvuk("bushsfx_final");
     }
 
     private void NapraviZamku()
