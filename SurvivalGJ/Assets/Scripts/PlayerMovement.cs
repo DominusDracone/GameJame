@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject explozivnaZamka;
     public float pomeraj;
     public TextMeshProUGUI txtGrancica;
-    public float intesity = 10;
+    public float intesity = 1000;
 
     private Rigidbody2D rb;
     private BoxCollider2D coll;
@@ -171,11 +171,6 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
 
-    }
-
-    public void ApplySpiderWebSlowdown(float slowdownFactor)
-    {
-        spiderWebSlowdownFactor = slowdownFactor;
     }
 
     public void ResetSpiderWebSlowdown()

@@ -9,6 +9,6 @@ public class BackgroundFollows : MonoBehaviour
     void Update()
     {
         //transform.position = new Vector3(player.position.x, player.position.y +2, transform.position.z);
-        transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.position.x, player.position.y, player.position.z);
     }
 }
