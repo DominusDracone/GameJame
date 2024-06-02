@@ -35,6 +35,7 @@ public class PlayerLifeHP : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
+            GetComponent<PlayerLife>().Die();
             Debug.Log("Umro si.");
         }
     }
