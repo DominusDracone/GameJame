@@ -154,6 +154,7 @@ public class EnemyScript : MonoBehaviour
     {
         Debug.Log("Ujeo sam ga");
         ujeo = true;
+        GameManager.Instance.PustiZvuk("playerhurtsfx");
         PlayerLifeHP plHP = collider.GetComponent<PlayerLifeHP>();
         plHP.currentHealth -= 30;
         PlayerMovement pm = collider.GetComponent<PlayerMovement>();
@@ -164,6 +165,7 @@ public class EnemyScript : MonoBehaviour
     {
         Debug.Log("Unistio sam se");
         IspustiResurse();
+        GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
         Destroy(collider.gameObject);//unistavanje zamke
         Destroy(gameObject);//unistavanje sebe
     }

@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         {
             dirX = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(dirX * moveSpeed * spiderWebSlowdownFactor, rb.velocity.y);
+            //GameManager.Instance.PustiZvuk("walksfx");
         }         
         if (Input.GetButtonDown("Jump") && IsGrounded() && !isHidden)
         {
@@ -114,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
         {
             brGrana -= 2;
             Instantiate(zamka, transform.position, new Quaternion());
+            GameManager.Instance.PustiZvuk("woodtrapsfx_final");
         }
     }
 
@@ -184,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     plHP.currentHealth += stakeHP;
                 }
+                GameManager.Instance.PustiZvuk("eatingsfx_final");
                 break;
             case "Stake":
                 Debug.Log("Pojeo stake");
@@ -196,6 +199,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     plHP.currentHealth += bobiceHP;
                 }
+                GameManager.Instance.PustiZvuk("eatingsfx_final");
                 break;
         }
     }
