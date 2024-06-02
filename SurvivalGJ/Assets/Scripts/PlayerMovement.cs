@@ -173,6 +173,7 @@ public class PlayerMovement : MonoBehaviour
                 Destroy(collision.gameObject);
                 brGrana++;
                 Debug.Log("Grana: " + brGrana);
+                GameManager.Instance.PustiZvuk("woodcollectsfx_final");
                 break;
             case "Bobica":
                 Debug.Log("Pojeo bobicu");
@@ -186,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     plHP.currentHealth += stakeHP;
                 }
-                GameManager.Instance.PustiZvuk("eatingsfx_final");
+                GameManager.Instance.PustiZvuk("eatingsfx_final2");
                 break;
             case "Stake":
                 Debug.Log("Pojeo stake");
@@ -199,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     plHP.currentHealth += bobiceHP;
                 }
-                GameManager.Instance.PustiZvuk("eatingsfx_final");
+                GameManager.Instance.PustiZvuk("eatingsfx_final2");
                 break;
         }
     }

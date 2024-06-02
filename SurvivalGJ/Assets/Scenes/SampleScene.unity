@@ -1545,7 +1545,7 @@ MonoBehaviour:
   asSFX: {fileID: 1261719504}
   SFXs:
   - {fileID: 8300000, guid: f245efaf073ede44b9cb39c342075aae, type: 3}
-  - {fileID: 8300000, guid: d14406f29a5ab1a49ab357b1589b56dc, type: 3}
+  - {fileID: 8300000, guid: cacfb414795ba2349a4e3fb69dfc46b6, type: 3}
   - {fileID: 8300000, guid: b9bffe9356d814d4cb49345008bac1a7, type: 3}
   - {fileID: 8300000, guid: 02ede50545cba7b48bc83fc2a37cff21, type: 3}
   - {fileID: 8300000, guid: 1eda8e8dfa5da4740925470f8b2e49d9, type: 3}
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d214e5ec0d71b645836d3fdd80be623, type: 3}
   - {fileID: 8300000, guid: e9dd8cee96f52a9438bbfe1918387429, type: 3}
   - {fileID: 8300000, guid: dd1d4699730120040a1909982768ec9c, type: 3}
-  - {fileID: 8300000, guid: dc8b0e0ce3c117049aeeb3403387e2e0, type: 3}
+  - {fileID: 8300000, guid: fb4aae69841dcee42a99be04a4ad70b8, type: 3}
 --- !u!4 &1444355288
 Transform:
   m_ObjectHideFlags: 0

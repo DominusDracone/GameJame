@@ -113,6 +113,7 @@ public class EnemyScript : MonoBehaviour
         {
             vidiIgraca = true;
             pm.isHunted = true;
+            GameManager.Instance.PustiZvuk("scream_final");
             Debug.Log("vidim ga sada");
         }
     }
@@ -161,7 +162,7 @@ public class EnemyScript : MonoBehaviour
         //.Odgurni(transform.position);
     }
 
-    private void UnistiSe(Collider2D collider)
+    public void UnistiSe(Collider2D collider)
     {
         Debug.Log("Unistio sam se");
         IspustiResurse();
@@ -173,5 +174,13 @@ public class EnemyScript : MonoBehaviour
     private void IspustiResurse()
     {
         Instantiate(stake, transform.position, new Quaternion());
+    }
+
+    internal void UnistiSe()
+    {
+        Debug.Log("Unistio sam se");
+        IspustiResurse();
+        GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
+        Destroy(gameObject);//unistavanje sebe
     }
 }
