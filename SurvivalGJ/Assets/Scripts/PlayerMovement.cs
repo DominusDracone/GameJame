@@ -65,21 +65,45 @@ public class PlayerMovement : MonoBehaviour
 
     private void UdiIzadjiIzBusha()
     {
-        Debug.Log("Bush");
         if (isHidden)
         {            
             isHidden = false;
             GetComponent<SpriteRenderer>().enabled = true;
+            GetComponent<Animator>().enabled = true;
             GetComponent<BoxCollider2D>().enabled = true;
-            GetComponent<Rigidbody2D>().gravityScale = 1;            
+            GetComponent<Rigidbody2D>().gravityScale = 1;
+
+            RaycastHit2D[] niz = Physics2D.CircleCastAll(transform.position, 2, Vector2.zero);
+
+            foreach (RaycastHit2D rh in niz)
+            {
+                if (rh.collider.transform.tag == "Bush")
+                {
+                    BushScript bs = rh.collider.GetComponent<BushScript>();
+                    bs.IgracJeIzasao();
+                    break;
+                }
+            }
         }
         else
         {
             isHidden = true;
+            GetComponent<Animator>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 0;
             nextToBush = true;
+            RaycastHit2D[] niz = Physics2D.CircleCastAll(transform.position, 2, Vector2.zero);
+
+            foreach (RaycastHit2D rh in niz)
+            {
+                if (rh.collider.transform.tag == "Bush")
+                {
+                    BushScript bs = rh.collider.GetComponent<BushScript>();
+                    bs.SakrijiIgraca();
+                    break;
+                }
+            }
         }
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,7 +6,10 @@ using UnityEngine;
 
 public class BushScript : MonoBehaviour
 {
-    private GameObject igrac;
+    public Sprite originalnoStanje;
+    public Sprite promenjenoStanje;
+
+    private GameObject igrac;    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,6 @@ public class BushScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,5 +39,15 @@ public class BushScript : MonoBehaviour
             pm.nextToBush = false;
             Debug.Log("Not next to bush");
         }
+    }
+
+    internal void SakrijiIgraca()
+    {
+        GetComponent<SpriteRenderer>().sprite = promenjenoStanje;
+    }
+
+    internal void IgracJeIzasao()
+    {
+        GetComponent<SpriteRenderer>().sprite = originalnoStanje;
     }
 }
