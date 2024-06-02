@@ -50,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
             dirX = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(dirX * moveSpeed * spiderWebSlowdownFactor, rb.velocity.y);
             //GameManager.Instance.PustiZvuk("walksfx");
-        }         
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
+        }    
         if (Input.GetButtonDown("Jump") && IsGrounded() && !isHidden)
         {
             rb.velocity = new Vector2(rb.velocity.x,jumpForce);
