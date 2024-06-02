@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6795446122110834260, guid: dd3dcc592bf75cb4786c1aa103c35c8b, type: 3}
-  spawnPoint: {fileID: 3587514275769100232}
-  respawnDelay: 90
+  respawnDelay: 30
   igrac: {fileID: 0}
   domet: 20
