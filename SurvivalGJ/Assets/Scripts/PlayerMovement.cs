@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject explozivnaZamka;
     public float pomeraj;
     public TextMeshProUGUI txtGrancica;
+    public float intesity = 10;
 
     private Rigidbody2D rb;
     private BoxCollider2D coll;
@@ -73,9 +74,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void NapraviExploziju()
     {
-        if (brGrana > 0 && state == MovementState.idle)
+        if (brGrana >= 5 && state == MovementState.idle)
         {
             brGrana -= 5;
+            txtGrancica.text = brGrana.ToString();
             Instantiate(explozivnaZamka, transform.position, new Quaternion());
             GameManager.Instance.PustiZvuk("explosivetrapactivatedsfx");
         }
@@ -128,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void NapraviZamku()
     {
-        if (brGrana > 0 && state == MovementState.idle)
+        if (brGrana >= 2 && state == MovementState.idle)
         {
             brGrana -= 2;
             txtGrancica.text = brGrana.ToString();
@@ -224,10 +226,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    internal void Odgurni(Vector3 vector3)
+    internal void Odgurni(Vector3 hitpos)
     {
-        Vector3 normV3 = vector3.normalized + new Vector3(7, 0, 0);
-
-        transform.position = Vector3.Lerp(transform.position, normV3, pomeraj);
+        Vector2 knockbackdir = transform.position - hitpos;
+        knockbackdir.Normalize();
+        knockbackdir.y = 3;
+        knockbackdir.x *= intesity;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        Debug.Log(">>> " + knockbackdir);
+        rb.velocity = knockbackdir;
     }
 }

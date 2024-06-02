@@ -80,17 +80,6 @@ public class EnemyScript : MonoBehaviour
 
     private void Napadni()
     {
-        //if (ujeo)
-        //{            
-        //    rb.velocity = Vector2.zero;
-        //    ujeo = false;
-
-        //    StartCoroutine(Wait);
-        //}
-        //else
-        //{
-        //    rb.velocity = new Vector2(igracPozicija.position.x - transform.position.x, 0) * brzina;
-        //}
 
         float razdaljina = igracPozicija.position.x - transform.position.x;
         if (razdaljina > 0)
@@ -113,7 +102,7 @@ public class EnemyScript : MonoBehaviour
         {
             vidiIgraca = true;
             pm.isHunted = true;
-            GameManager.Instance.PustiZvuk("scream_final");
+            GameManager.Instance.PustiZvuk("bugsfx1");
             Debug.Log("vidim ga sada");
         }
     }
@@ -151,7 +140,7 @@ public class EnemyScript : MonoBehaviour
                 break;
             case "Explozija":
                 EksplozivnaZamka ez = collision.collider.GetComponent<EksplozivnaZamka>();
-                GameManager.Instance.PustiZvuk("explosionsfx");
+                GameManager.Instance.PustiZvuk("explosionsfx_final");
                 ez.Explosion(transform.gameObject);
                 break;
         }
@@ -162,12 +151,11 @@ public class EnemyScript : MonoBehaviour
     private void Ujedi(Collider2D collider)
     {
         Debug.Log("Ujeo sam ga");
-        ujeo = true;
         GameManager.Instance.PustiZvuk("playerhurtsfx");
         PlayerLifeHP plHP = collider.GetComponent<PlayerLifeHP>();
         plHP.currentHealth -= 30;
         PlayerMovement pm = collider.GetComponent<PlayerMovement>();
-        //.Odgurni(transform.position);
+        pm.Odgurni(transform.position);
     }
 
     public void UnistiSe(GameObject go)
