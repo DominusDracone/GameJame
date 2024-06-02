@@ -5,7 +5,6 @@ using UnityEngine;
 public class EksplozivnaZamka : MonoBehaviour
 {
     private GameObject igrac;
-    private bool isExploding = false;
     private float radius = 1;
     // Start is called before the first frame update
     void Start()

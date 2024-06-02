@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject zamka;
     public GameObject explozivnaZamka;
     public float pomeraj;
+    public TextMeshProUGUI txtGrancica;
 
     private Rigidbody2D rb;
     private BoxCollider2D coll;
@@ -129,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
         if (brGrana > 0 && state == MovementState.idle)
         {
             brGrana -= 2;
+            txtGrancica.text = brGrana.ToString();
             Instantiate(zamka, transform.position, new Quaternion());
             GameManager.Instance.PustiZvuk("woodtrapsfx_final");
         }
@@ -186,9 +189,10 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Grana":
                 Destroy(collision.gameObject);
-                brGrana++;
+                brGrana++;                
                 Debug.Log("Grana: " + brGrana);
                 GameManager.Instance.PustiZvuk("woodcollectsfx_final");
+                txtGrancica.text = brGrana.ToString();
                 break;
             case "Bobica":
                 Debug.Log("Pojeo bobicu");
