@@ -139,16 +139,24 @@ public class EnemyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        switch (collision.collider.tag)
+        {
+            case "Zamka":
+                GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
+                UnistiSe(collision.collider.gameObject);
+                break;
+            case "Igrac":
+                rb.velocity = Vector2.zero;
+                Ujedi(collision.collider);
+                break;
+            case "Explozija":
+                EksplozivnaZamka ez = collision.collider.GetComponent<EksplozivnaZamka>();
+                GameManager.Instance.PustiZvuk("explosionsfx");
+                ez.Explosion(transform.gameObject);
+                break;
+        }
         Debug.Log("Udarac");
-        if (collision.collider.CompareTag("Zamka"))
-        {
-            UnistiSe(collision.collider);
-        }
-        if (collision.collider.CompareTag("Igrac"))
-        {
-            rb.velocity = Vector2.zero;
-            Ujedi(collision.collider);
-        }
+
     }
 
     private void Ujedi(Collider2D collider)
@@ -162,12 +170,11 @@ public class EnemyScript : MonoBehaviour
         //.Odgurni(transform.position);
     }
 
-    public void UnistiSe(Collider2D collider)
+    public void UnistiSe(GameObject go)
     {
         Debug.Log("Unistio sam se");
         IspustiResurse();
-        GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
-        Destroy(collider.gameObject);//unistavanje zamke
+        Destroy(go);//unistavanje zamke
         Destroy(gameObject);//unistavanje sebe
     }
 
@@ -176,11 +183,4 @@ public class EnemyScript : MonoBehaviour
         Instantiate(stake, transform.position, new Quaternion());
     }
 
-    internal void UnistiSe()
-    {
-        Debug.Log("Unistio sam se");
-        IspustiResurse();
-        GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
-        Destroy(gameObject);//unistavanje sebe
-    }
 }

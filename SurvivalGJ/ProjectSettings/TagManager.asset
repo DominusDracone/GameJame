@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Bush
   - Rain
+  - Explozija
   layers:
   - Default
   - TransparentFX

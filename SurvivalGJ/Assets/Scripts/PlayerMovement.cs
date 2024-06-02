@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameObject zamka;
+    public GameObject explozivnaZamka;
     public float pomeraj;
 
     private Rigidbody2D rb;
@@ -55,6 +56,10 @@ public class PlayerMovement : MonoBehaviour
         {
             NapraviZamku();
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            NapraviExploziju();
+        }
         if (Input.GetKeyDown(KeyCode.F) && nextToBush && !isHunted)
         {
             UdiIzadjiIzBusha();
@@ -62,6 +67,16 @@ public class PlayerMovement : MonoBehaviour
 
         UpdateAnimationState();
         
+    }
+
+    private void NapraviExploziju()
+    {
+        if (brGrana > 0 && state == MovementState.idle)
+        {
+            brGrana -= 5;
+            Instantiate(explozivnaZamka, transform.position, new Quaternion());
+            GameManager.Instance.PustiZvuk("explosivetrapactivatedsfx");
+        }
     }
 
     private void UdiIzadjiIzBusha()
