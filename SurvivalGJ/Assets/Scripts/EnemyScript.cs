@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour
 {
     public float brzina;
     public GameObject stake;
+    public float domet;
 
     private Collider2D pogled;
     private bool vidiIgraca = false;
@@ -18,7 +19,7 @@ public class EnemyScript : MonoBehaviour
     private Transform igracPozicija;
     private GameObject igrac;
     private bool ujeo;
-    private GameObject[] zbunje;
+    private GameObject[] zbunje;    
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,7 @@ public class EnemyScript : MonoBehaviour
         switch (smer)
         {
             case Smer.desno:
-                if (transform.position.x < pocetnaPozicija.x + 5)
+                if (transform.position.x < pocetnaPozicija.x + domet)
                 {
                     rb.velocity = Vector2.right;
                 }
@@ -65,7 +66,7 @@ public class EnemyScript : MonoBehaviour
                 }
                 break;
             case Smer.levo:
-                if (transform.position.x > pocetnaPozicija.x - 5)
+                if (transform.position.x > pocetnaPozicija.x - domet)
                 {
                     rb.velocity = Vector2.left;
                 }
@@ -134,6 +135,12 @@ public class EnemyScript : MonoBehaviour
                 GameManager.Instance.PustiZvuk("normaltrapactivatedsfx");
                 UnistiSe(collision.collider.gameObject);
                 break;
+            case "Enemy":
+                PromeniSmer();
+                break;
+            case "Zid":
+                PromeniSmer();
+                break;
             case "Igrac":
                 rb.velocity = Vector2.zero;
                 Ujedi(collision.collider);
@@ -146,6 +153,20 @@ public class EnemyScript : MonoBehaviour
         }
         Debug.Log("Udarac");
 
+    }
+
+    private void PromeniSmer()
+    {
+        if(smer == Smer.desno)
+        {
+            smer = Smer.levo;
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            smer = Smer.desno;
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
 
     private void Ujedi(Collider2D collider)

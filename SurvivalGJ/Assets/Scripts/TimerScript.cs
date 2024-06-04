@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,7 +13,7 @@ public class TimerCript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        time = Time.time;
     }
 
     // Update is called once per frame
@@ -24,5 +25,15 @@ public class TimerCript : MonoBehaviour
 
         // Debug.Log("minutes:" + minutes + "seconds:" + seconds);
         textMesh.text = minutes + ":" + seconds;
+
+        if (minutes == 3)
+        {
+            OtvoriNoviNivo();
+        }
+    }
+
+    private void OtvoriNoviNivo()
+    {
+        //novi nivo
     }
 }

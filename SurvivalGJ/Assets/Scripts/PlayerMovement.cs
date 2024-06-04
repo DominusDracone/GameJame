@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField]  private float jumpForce = 8f;
-    private float spiderWebSlowdownFactor = 1f;
     private MovementState state;
     internal bool isHunted;
 
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isHidden)
         {
             dirX = Input.GetAxisRaw("Horizontal");
-            rb.velocity = new Vector2(dirX * moveSpeed * spiderWebSlowdownFactor, rb.velocity.y);
+            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
             //GameManager.Instance.PustiZvuk("walksfx");
         }
         else
@@ -177,11 +176,6 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void ResetSpiderWebSlowdown()
-    {
-        spiderWebSlowdownFactor = 1f; // Reset to default (no slowdown)
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {        
         PlayerLifeHP plHP = GetComponent<PlayerLifeHP>();
@@ -222,6 +216,14 @@ public class PlayerMovement : MonoBehaviour
                 }
                 GameManager.Instance.PustiZvuk("eatingsfx_final2");
                 break;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Dno"))
+        {
+            GetComponent<PlayerLifeHP>().Die();
         }
     }
 
