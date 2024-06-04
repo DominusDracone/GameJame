@@ -199,19 +199,6 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log("Pojeo bobicu");
                 Destroy(collision.gameObject);
                 
-                if (plHP.currentHealth + stakeHP > 100)
-                {
-                    plHP.currentHealth = 100;
-                }
-                else
-                {
-                    plHP.currentHealth += stakeHP;
-                }
-                GameManager.Instance.PustiZvuk("eatingsfx_final2");
-                break;
-            case "Stake":
-                Debug.Log("Pojeo stake");
-                Destroy(collision.gameObject);
                 if (plHP.currentHealth + bobiceHP > 100)
                 {
                     plHP.currentHealth = 100;
@@ -219,6 +206,19 @@ public class PlayerMovement : MonoBehaviour
                 else
                 {
                     plHP.currentHealth += bobiceHP;
+                }
+                GameManager.Instance.PustiZvuk("eatingsfx_final2");
+                break;
+            case "Stake":
+                Debug.Log("Pojeo stake");
+                Destroy(collision.gameObject);
+                if (plHP.currentHealth + stakeHP > 100)
+                {
+                    plHP.currentHealth = 100;
+                }
+                else
+                {
+                    plHP.currentHealth += stakeHP;
                 }
                 GameManager.Instance.PustiZvuk("eatingsfx_final2");
                 break;
