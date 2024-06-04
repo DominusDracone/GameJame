@@ -16,6 +16,7 @@ TagManager:
   - Zid
   - Dno
   - Vrata
+  - Tajmer
   layers:
   - Default
   - TransparentFX

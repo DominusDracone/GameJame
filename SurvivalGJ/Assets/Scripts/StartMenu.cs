@@ -8,5 +8,6 @@ public class StartMenu : MonoBehaviour
     public void StarGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameObject.FindGameObjectWithTag("Tajmer").GetComponent<TimerCript>().Restart();
     }
 }    

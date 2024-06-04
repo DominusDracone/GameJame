@@ -2013,7 +2013,7 @@ GameObject:
   - component: {fileID: 450731760}
   m_Layer: 5
   m_Name: Timer
-  m_TagString: Untagged
+  m_TagString: Tajmer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3765,6 +3765,7 @@ GameObject:
   - component: {fileID: 1007135890}
   - component: {fileID: 1007135889}
   - component: {fileID: 1007135888}
+  - component: {fileID: 1007135891}
   m_Layer: 0
   m_Name: Vrata
   m_TagString: Vrata
@@ -3890,6 +3891,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007135891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007135887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78140031a4476244ea5a49c0c3f03ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  igrac: {fileID: 1430135566}
 --- !u!1001 &1009593156
 PrefabInstance:
   m_ObjectHideFlags: 0
