@@ -7,6 +7,8 @@ using UnityEngine;
 public class TimerCript : MonoBehaviour
 {
     public TextMeshProUGUI textMesh = null;
+    public GameObject vrata;
+
     private float time = 0;
     private int seconds = 0;
     private int minutes = 0;
@@ -26,7 +28,7 @@ public class TimerCript : MonoBehaviour
         // Debug.Log("minutes:" + minutes + "seconds:" + seconds);
         textMesh.text = minutes + ":" + seconds;
 
-        if (minutes == 3)
+        if (minutes == 1)
         {
             OtvoriNoviNivo();
         }
@@ -34,6 +36,11 @@ public class TimerCript : MonoBehaviour
 
     private void OtvoriNoviNivo()
     {
-        //novi nivo
+       vrata.SetActive(true);
+    }
+
+    internal void Restart()
+    {
+        throw new NotImplementedException();
     }
 }

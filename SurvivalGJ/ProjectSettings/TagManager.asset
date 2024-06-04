@@ -15,6 +15,7 @@ TagManager:
   - Explozija
   - Zid
   - Dno
+  - Vrata
   layers:
   - Default
   - TransparentFX
