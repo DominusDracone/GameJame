@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public GameObject zamka;
     public GameObject explozivnaZamka;
+    public GameObject kamp;
     public float pomeraj;
     public TextMeshProUGUI txtGrancica;
     public float intesity = 1000;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField]  private float jumpForce = 8f;
     private MovementState state;
+    private PlayerLifeHP plHP;
     internal bool isHunted;
 
     private enum MovementState { idle, running, jumping, falling }
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        plHP = GetComponent<PlayerLifeHP>();
     }
 
     // Update is called once per frame
@@ -60,29 +63,34 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            NapraviZamku();
+            Napravi(zamka, 2, "woodtrapsfx_final");
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            NapraviExploziju();
+            Napravi(explozivnaZamka, 5, "explosivetrapactivatedsfx");
         }
         if (Input.GetKeyDown(KeyCode.F) && nextToBush && !isHunted)
         {
             UdiIzadjiIzBusha();
-        }       
+        }
+        if (Input.GetKeyDown(KeyCode.C) && !isHunted)
+        {
+            Napravi(kamp, 10, "");
+            plHP.brKampova++;
+        }
 
         UpdateAnimationState();
         
     }
 
-    private void NapraviExploziju()
+    private void Napravi(GameObject objekat, int cenaGrancica, string nazivZvuka)
     {
-        if (brGrana >= 5 && state == MovementState.idle)
+        if (brGrana >= cenaGrancica && state == MovementState.idle)
         {
-            brGrana -= 5;
+            brGrana -= cenaGrancica;
             txtGrancica.text = brGrana.ToString();
-            Instantiate(explozivnaZamka, transform.position, new Quaternion());
-            GameManager.Instance.PustiZvuk("explosivetrapactivatedsfx");
+            Instantiate(objekat, transform.position, new Quaternion());
+            GameManager.Instance.PustiZvuk(nazivZvuka);
         }
     }
 
@@ -131,17 +139,6 @@ public class PlayerMovement : MonoBehaviour
         GameManager.Instance.PustiZvuk("bushsfx_final");
     }
 
-    private void NapraviZamku()
-    {
-        if (brGrana >= 2 && state == MovementState.idle)
-        {
-            brGrana -= 2;
-            txtGrancica.text = brGrana.ToString();
-            Instantiate(zamka, transform.position, new Quaternion());
-            GameManager.Instance.PustiZvuk("woodtrapsfx_final");
-        }
-    }
-
     private void UpdateAnimationState()
     {
         if (dirX > 0f)
@@ -178,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {        
-        PlayerLifeHP plHP = GetComponent<PlayerLifeHP>();
+        plHP = GetComponent<PlayerLifeHP>();
 
         switch (collision.gameObject.tag)
         {

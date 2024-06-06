@@ -17,6 +17,8 @@ public class PlayerLifeHP : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
 
+    public int brKampova;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -74,8 +76,20 @@ public class PlayerLifeHP : MonoBehaviour
 
     public void Die()
     {
-        rb.bodyType = RigidbodyType2D.Static;
-        anim.SetTrigger("death");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        if (brKampova == 0)
+        {
+            rb.bodyType = RigidbodyType2D.Static;
+            anim.SetTrigger("death");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            Debug.Log("Umro si.");
+        }
+        else
+        {
+            currentHealth = maxHealth / 2;
+            GameObject kamp = GameObject.FindGameObjectsWithTag("Kamp")[0];
+            transform.position = kamp.transform.position;            
+            Destroy(kamp);
+            brKampova--;
+        }        
     }
 }

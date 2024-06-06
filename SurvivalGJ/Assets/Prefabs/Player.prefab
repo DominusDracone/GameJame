@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zamka: {fileID: 2829730190406747768, guid: 51f2205f522da8246a9d9363093911df, type: 3}
   explozivnaZamka: {fileID: 6750819078076461210, guid: b10862f062304774e86058da0872d0c8, type: 3}
+  kamp: {fileID: 7304845967751329645, guid: f9b511ce57cb3224ba93d86537acc5e9, type: 3}
   pomeraj: 10
   txtGrancica: {fileID: 0}
   intesity: 1000

@@ -86,10 +86,12 @@ public class EnemyScript : MonoBehaviour
         if (razdaljina > 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
+            razdaljina += 1;
         }
         else
         {
             GetComponent<SpriteRenderer>().flipX = false;
+            razdaljina -= 1;
         }
         rb.velocity = new Vector2(razdaljina, 0) * brzina;
 
