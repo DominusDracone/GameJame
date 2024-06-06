@@ -226,12 +226,12 @@ public class PlayerMovement : MonoBehaviour
 
     internal void Odgurni(Vector3 hitpos)
     {
-        Vector2 knockbackdir = transform.position - hitpos;
+        Vector3 knockbackdir = transform.position - hitpos;
         knockbackdir.Normalize();
-        knockbackdir.y = 3;
+        knockbackdir.y = 5;
         knockbackdir.x *= intesity;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Debug.Log(">>> " + knockbackdir);
-        rb.velocity = knockbackdir;
+        rb.AddForce(knockbackdir, ForceMode2D.Impulse);
     }
 }
