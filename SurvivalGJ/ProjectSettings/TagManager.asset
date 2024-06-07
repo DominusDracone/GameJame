@@ -17,6 +17,8 @@ TagManager:
   - Dno
   - Vrata
   - Tajmer
+  - Kamp
+  - Kanap
   layers:
   - Default
   - TransparentFX

@@ -228,7 +228,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 knockbackdir = transform.position - hitpos;
         knockbackdir.Normalize();
-        knockbackdir.y = 5;
+        knockbackdir.y = 1;
         knockbackdir.x *= intesity;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Debug.Log(">>> " + knockbackdir);
